@@ -1,0 +1,20 @@
+ul {
+  padding: 0;
+}
+
+.listItem {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+select {
+  height: 31px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}

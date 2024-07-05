@@ -1,0 +1,152 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+}
+.input {
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #6c63ff;
+  border-radius: 10px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+::placeholder {
+  color: #6c63ff;
+  opacity: 1; /* Firefox */
+}
+
+.select_div {
+  position: relative;
+  width: 15rem;
+}
+
+.select_arrow {
+  position: absolute;
+  top: 50%;
+  right: 1.3rem;
+  transform: translate(50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  z-index: 1;
+}
+
+.select {
+  width: 100%;
+  padding: 5px 15px;
+  background-color: #6c63ff;
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  appearance: none;
+  position: relative;
+  height: 40px;
+  z-index: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addtodo {
+  width: 140px;
+  padding: 4px 10px;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  height: 40px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addtodo:hover {
+  background-color: #534cc2;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.modal-input {
+  width: 90%;
+  padding: 5px 15px;
+  border: 1px solid #6c63ff;
+  border-radius: 10px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  margin: 40px 0;
+}
+.channel {
+  color: #6c63ff;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #6c63ff;
+  transition: all 0.5s ease;
+}
+.apply {
+  background-color: #6c63ff;
+  border: 1px solid transparent;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.apply:hover {
+  background-color: #534cc2;
+}
+.channel:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.todo-buttons{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .input{
+    width: 80%;
+  }
+  .todo-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
